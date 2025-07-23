@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.6">
+    <title>NewDawn Project</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        html { scroll-behavior: smooth; }
+        nav {
+            background: #2d6cdf;
+            padding: 12px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 18px;
+            font-size: 1.1rem;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #7ecfff;
+        }
+        .contact-form {
+            max-width: 400px;
+            margin: 32px auto;
+            background: #fff;
+            padding: 24px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(45, 108, 223, 0.07);
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0 16px 0;
+            border-radius: 6px;
+            border: 1px solid #cce0ff;
+            font-size: 1rem;
+        }
+        .contact-form button {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#mission">Mission</a>
+        <a href="#projects">Projects</a>
+        <a href="#team">Team</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <h1>Welcome to NewDawn Project</h1>
+    <p>This is the Oficial Website Repository for the Project</p>
+    
+    <div class="buttons-container">
+        <button onclick="document.getElementById('mission').scrollIntoView({behavior:'smooth'})">More About</button>
+        <button onclick="document.getElementById('team').scrollIntoView({behavior:'smooth'})">Meet the Team</button>
+    </div>
+
+    <section id="mission">
+        <h2 style="text-align:center; color:#2d6cdf;">Our Mission</h2>
+        <p>NewDawn Project aims to innovate and inspire by delivering modern solutions for a brighter future. We believe in creativity, collaboration, and continuous improvement.</p>
+        <p>We focus on developing technology that empowers communities, supports sustainability, and drives positive change. Our team is passionate about learning and sharing knowledge to make a real impact.</p>
+    </section>
+
+    <section id="projects">
+        <h2 style="text-align:center; color:#2d6cdf;">Projects</h2>
+        <ul style="max-width:600px; margin:0 auto; padding:0; list-style:none;">
+            <li style="background:#fff; margin:12px 0; padding:12px 18px; border-radius:8px; box-shadow:0 1px 4px rgba(45,108,223,0.07); color:#222;">
+                <strong>EcoTrack</strong> – A platform for tracking and reducing carbon footprint.
+            </li>
+            <li style="background:#fff; margin:12px 0; padding:12px 18px; border-radius:8px; box-shadow:0 1px 4px rgba(45,108,223,0.07); color:#222;">
+                <strong>EduConnect</strong> – Connecting students and mentors for collaborative learning.
+            </li>
+            <li style="background:#fff; margin:12px 0; padding:12px 18px; border-radius:8px; box-shadow:0 1px 4px rgba(45,108,223,0.07); color:#222;">
+                <strong>HealthBridge</strong> – Digital solutions for remote healthcare access.
+            </li>
+        </ul>
+    </section>
+
+    <section id="team">
+        <h2 style="text-align:center; color:#2d6cdf;">Team Members</h2>
+        <ul style="max-width:500px; margin:0 auto; padding:0; list-style:none;">
+            <li style="background:#fff; margin:12px 0; padding:12px 18px; border-radius:8px; box-shadow:0 1px 4px rgba(45,108,223,0.07); color:#222;">
+                <strong>Ana Silva</strong> – Project Manager
+            </li>
+            <li style="background:#fff; margin:12px 0; padding:12px 18px; border-radius:8px; box-shadow:0 1px 4px rgba(45,108,223,0.07); color:#222;">
+                <strong>Lucas Pereira</strong> – Lead Developer
+            </li>
+            <li style="background:#fff; margin:12px 0; padding:12px 18px; border-radius:8px; box-shadow:0 1px 4px rgba(45,108,223,0.07); color:#222;">
+                <strong>Maria Costa</strong> – UX Designer
+            </li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2 style="text-align:center; color:#2d6cdf;">Contact Us</h2>
+        <form class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer style="position:fixed; left:0; bottom:0; width:100%; background:#2d6cdf; color:#fff; text-align:center; padding:8px 0; font-size:0.95rem; box-shadow:0 -2px 8px rgba(45,108,223,0.07);">
+        <span>&copy; 2025 NewDawn Project. All rights reserved. | 
+        <a href="mailto:contact@newdawnproject.com" style="color:#7ecfff; text-decoration:none;">contact@newdawnproject.com</a></span>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
